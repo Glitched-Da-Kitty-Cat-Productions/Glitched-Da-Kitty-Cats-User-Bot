@@ -1,12 +1,13 @@
 const { app, BrowserWindow } = require('electron');
 const path = require('path');
+require('./scripts/index.js');
 
 function createWindow() {
     const mainWindow = new BrowserWindow({
         width: 800,
         height: 600,
         webPreferences: {
-            preload: path.join(__dirname, 'frontend/scripts/main.js'),
+            preload: path.join(__dirname, 'main.js'),
             contextIsolation: true,
             enableRemoteModule: false,
         },
