@@ -26,7 +26,13 @@ const loadCommands = (client) => {
 
         if (command) {
             try {
-                command.execute(message, args);
+                if (command.execute.length === 3) {
+                    command.execute(client, message, args);
+                } else if (command.execute.length === 2) {
+                    command.execute(message, args);
+                } else {
+                    console.error(`Invalid execute function signature for command ${commandName}`);
+                }
             } catch (err) {
                 console.error(`Error executing command ${commandName}:`, err);
             }

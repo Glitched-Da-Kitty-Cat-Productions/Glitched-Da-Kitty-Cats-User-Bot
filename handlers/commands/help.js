@@ -15,7 +15,9 @@ module.exports = {
                 .map(cmd => `\`${cmd.name}\`: ${cmd.description}`)
                 .join('\n');
 
-            return message.channel.send(`**Available Commands:**\n${commandList}\n\nUse \`help <command>\` for detailed information about a specific command.`);
+            const commandCount = commands.size;
+
+            return message.channel.send(`**Available Commands (${commandCount}):**\n${commandList}\n\nUse \`help <command>\` for detailed information about a specific command.`);
         }
 
         const commandName = args[0].toLowerCase();
