@@ -9,6 +9,7 @@ global.autoreactConfigs = [];
 const client = new Client();
 client.prefix = prefix;
 
+
 log('Starting bot...');
 
 const handleError = (type, err) => {
@@ -27,7 +28,6 @@ const initializeBot = () => {
   log('Loading message handler...');
   messageHandler(client);
 };
-
 const startBot = async () => {
   try {
     await client.login(token);
