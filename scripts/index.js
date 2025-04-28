@@ -27,6 +27,7 @@ const initializeBot = () => {
 
   log('Loading message handler...');
   messageHandler(client);
+  log('Bot handlers initialized successfully!\nRunning SUccessfully!');
 };
 const startBot = async () => {
   try {

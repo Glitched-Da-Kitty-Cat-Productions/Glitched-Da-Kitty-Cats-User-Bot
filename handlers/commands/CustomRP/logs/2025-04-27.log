@@ -1,0 +1,48 @@
+[18:50:17]  INFO: Attempting a new connection
+[18:50:17]  INFO: RPC Connection Started
+[18:50:17] TRACE: ============================
+[18:50:17] TRACE: Assembly:             DiscordRPC, Version=1.3.0.3, Culture=neutral, PublicKeyToken=null
+[18:50:17] TRACE: Pipe:                 DiscordRPC.IO.ManagedNamedPipeClient
+[18:50:17] TRACE: Platform:             Microsoft Windows NT 10.0.19045.0
+[18:50:17] TRACE: applicationID:        1366191960259432498
+[18:50:17] TRACE: targetPipe:           -1
+[18:50:17] TRACE: POLL_RATE:            1000
+[18:50:17] TRACE: _maxRtQueueSize:      512
+[18:50:17] TRACE: _maxRxQueueSize:      0
+[18:50:17] TRACE: ============================
+[18:50:17] TRACE: Connecting to the pipe through the DiscordRPC.IO.ManagedNamedPipeClient
+[18:50:17] TRACE: ManagedNamedPipeClient.Connection(-1)
+[18:50:17] TRACE: Connection Attempt 0 ()
+[18:50:17]  INFO: Attempting to connect to 'discord-ipc-0'
+[18:50:17] TRACE: Waiting for connection...
+[18:50:17]  INFO: Connected to 'discord-ipc-0'
+[18:50:17] TRACE: Done. Result: False
+[18:50:17] TRACE: Begining Read of 16384 bytes
+[18:50:17] TRACE: Connected to the pipe. Attempting to establish handshake...
+[18:50:17] TRACE: Enqueued Message, but queue size is 0.
+[18:50:17] TRACE: Attempting to establish a handshake...
+[18:50:17] TRACE: Sending Handshake...
+[18:50:17] TRACE: Setting the connection state to CONNECTING
+[18:50:17] TRACE: Connection Established. Starting reading loop...
+[18:50:17] TRACE: Ending Read
+[18:50:17] TRACE: Read 445 bytes
+[18:50:17] TRACE: Read a frame: Frame
+[18:50:17] TRACE: Starting another read
+[18:50:17] TRACE: Begining Read of 16384 bytes
+[18:50:18] TRACE: Read Payload: Frame
+[18:50:18]  INFO: Handling Response. Cmd: Dispatch, Event: Ready
+[18:50:18]  INFO: Connection established with the RPC
+[18:50:18] TRACE: Setting the connection state to CONNECTED
+[18:50:21] TRACE: Enqueued Message, but queue size is 0.
+[18:51:15] TRACE: Enqueue Command: DiscordRPC.RPC.Commands.PresenceCommand
+[18:51:15] TRACE: Attempting to send payload: SetActivity
+[18:51:15] TRACE: Sending payload: SetActivity
+[18:51:15] TRACE: Sent Successfully.
+[18:51:15] TRACE: Ending Read
+[18:51:15] TRACE: Read 709 bytes
+[18:51:15] TRACE: Read a frame: Frame
+[18:51:15] TRACE: Starting another read
+[18:51:15] TRACE: Begining Read of 16384 bytes
+[18:51:16] TRACE: Read Payload: Frame
+[18:51:16]  INFO: Handling Response. Cmd: SetActivity, Event: 
+[18:51:16] TRACE: Enqueued Message, but queue size is 0.
