@@ -31,6 +31,7 @@ const initializeBot = () => {
 };
 const startBot = async () => {
   try {
+    log('Thank You For Using My Userbot! and Join My Discord Server By Using information Command!');
     await client.login(token);
     log('Bot logged in successfully!');
     initializeBot();
